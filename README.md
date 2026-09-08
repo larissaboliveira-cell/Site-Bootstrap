@@ -3,8 +3,8 @@
 ## 📝 Descrição do Projeto
 Este projeto consiste em um e-commerce fictício de produtos de tecnologia criado para aplicar os conceitos fundamentais do Bootstrap 5, incluindo layout responsivo, sistema de grid de 12 colunas e componentes nativos do framework.
 
-## 👤 Autor
-- **Aluno:** [Seu Nome Completo]
+## 👤 Autores
+- **Alunos:** Kauã Batista Barbosa e Larissa Brito Oliveira
 
 ## 🎯 Tema Escolhido
 - **Tema:** Loja Virtual / Tecnologia
@@ -22,3 +22,4 @@ Este projeto consiste em um e-commerce fictício de produtos de tecnologia criad
 1. Clone este repositório:
    ```bash
    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   
