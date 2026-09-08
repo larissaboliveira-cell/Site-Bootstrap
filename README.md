@@ -15,11 +15,17 @@ Este projeto consiste em um e-commerce fictício de produtos de tecnologia criad
 - Bootstrap 5.3 (via CDN)
 
 ## 🌐 Links do Projeto
-- **Repositório GitHub:** [https://github.com/seu-usuario/seu-repositorio](https://github.com/seu-usuario/seu-repositorio)
-- **Site Publicado (Vercel):** [https://seu-projeto.vercel.app](https://seu-projeto.vercel.app)
 
+- **Repositório GitHub:** https://github.com/larissaboliveira-cell/Site-Bootstrap
+- **Site Publicado (Vercel):** https://site-bootstrap-rose.vercel.app
+
+## 🚀 Como Executar Localmente
+
+1. Clonar este repositório:
+```bash
+git clone [https://github.com/larissaboliveira-cell/Site-Bootstrap.git](https://github.com/larissaboliveira-cell/Site-Bootstrap.git)
 ## 🚀 Como Executar Localmente
 1. Clone este repositório:
    ```bash
    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-   
+
