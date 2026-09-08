@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!<!<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -41,7 +41,9 @@
             <p class="card-text text-muted">Design em titânio, chip A18 Pro e câmera de 48 MP.</p>
             <div class="mt-auto">
               <span class="fs-4 fw-bold text-success">R$ 4.499,99</span>
-              <button class="btn btn-outline-primary w-100 mt-2">Adicionar ao Carrinho</button>
+              <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalCheckout">
+                Adicionar ao Carrinho
+              </button>
             </div>
           </div>
         </div>
@@ -56,7 +58,9 @@
             <p class="card-text text-muted">Tela 14" Full HD, 1,2 kg de peso e apenas 1,1 cm de espessura.</p>
             <div class="mt-auto">
               <span class="fs-4 fw-bold text-success">R$ 5.390,00</span>
-              <button class="btn btn-outline-primary w-100 mt-2">Adicionar ao Carrinho</button>
+              <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalCheckout">
+                Adicionar ao Carrinho
+              </button>
             </div>
           </div>
         </div>
@@ -71,7 +75,9 @@
             <p class="card-text text-muted">Cancelamento de ruído ativo e som de alta fidelidade.</p>
             <div class="mt-auto">
               <span class="fs-4 fw-bold text-success">R$ 799,99</span>
-              <button class="btn btn-outline-primary w-100 mt-2">Adicionar ao Carrinho</button>
+              <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalCheckout">
+                Adicionar ao Carrinho
+              </button>
             </div>
           </div>
         </div>
@@ -86,7 +92,9 @@
             <p class="card-text text-muted">Painel Ultrawide curvo com 1ms de resposta para máxima imersão.</p>
             <div class="mt-auto">
               <span class="fs-4 fw-bold text-success">R$ 689,90</span>
-              <button class="btn btn-outline-primary w-100 mt-2">Adicionar ao Carrinho</button>
+              <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalCheckout">
+                Adicionar ao Carrinho
+              </button>
             </div>
           </div>
         </div>
@@ -101,7 +109,9 @@
             <p class="card-text text-muted">Switches táticos, iluminação por tecla e estrutura reforçada.</p>
             <div class="mt-auto">
               <span class="fs-4 fw-bold text-success">R$ 109,99</span>
-              <button class="btn btn-outline-primary w-100 mt-2">Adicionar ao Carrinho</button>
+              <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalCheckout">
+                Adicionar ao Carrinho
+              </button>
             </div>
           </div>
         </div>
@@ -116,7 +126,9 @@
             <p class="card-text text-muted">Monitoramento de treino, oxigênio no sangue e GPS integrado.</p>
             <div class="mt-auto">
               <span class="fs-4 fw-bold text-success">R$ 289,90</span>
-              <button class="btn btn-outline-primary w-100 mt-2">Adicionar ao Carrinho</button>
+              <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalCheckout">
+                Adicionar ao Carrinho
+              </button>
             </div>
           </div>
         </div>
@@ -131,7 +143,9 @@
             <p class="card-text text-muted">Ajuste lombar 3D, suporte de braço multidirecional e conforto extremo.</p>
             <div class="mt-auto">
               <span class="fs-4 fw-bold text-success">R$ 599,99</span>
-              <button class="btn btn-outline-primary w-100 mt-2">Adicionar ao Carrinho</button>
+              <button class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalCheckout">
+                Adicionar ao Carrinho
+              </button>
             </div>
           </div>
         </div>
@@ -139,6 +153,64 @@
 
     </div>
   </main>
+
+  <!-- Modal de Checkout / Compra -->
+  <div class="modal fade" id="modalCheckout" tabindex="-1" aria-labelledby="modalCheckoutLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalCheckoutLabel">🛒 Finalizar Compra</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formCheckout" onsubmit="event.preventDefault(); alert('Compra realizada com sucesso!');">
+            <h6 class="fw-bold mb-3">Dados Pessoais</h6>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" required placeholder="Digite seu nome">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" required placeholder="seu@email.com">
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <h6 class="fw-bold mb-3">Endereço de Entrega</h6>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label">CEP</label>
+                <input type="text" class="form-control" required placeholder="00000-000">
+              </div>
+              <div class="col-md-8">
+                <label class="form-label">Endereço</label>
+                <input type="text" class="form-control" required placeholder="Rua, Número, Bairro">
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <h6 class="fw-bold mb-3">Forma de Pagamento</h6>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="pagamento" id="pix" checked>
+              <label class="form-check-label" for="pix">PIX (Aprovação imediata)</label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="pagamento" id="cartao">
+              <label class="form-check-label" for="cartao">Cartão de Crédito</label>
+            </div>
+
+            <div class="modal-footer px-0 pb-0">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-success fw-bold">Confirmar Pedido</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-auto">
@@ -150,3 +222,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
